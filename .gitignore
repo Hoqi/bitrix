@@ -1,0 +1,14 @@
+/bitrix
+!/bitrix/backup
+
+
+/upload/.htaccess
+/upload
+!/upload/rew_files/
+!/upload/rew.xml
+*.bak
+*.log
+*.tmp
+*.rar
+*.zip
+
