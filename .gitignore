@@ -3,9 +3,9 @@
 
 
 /upload/.htaccess
-/upload
 !/upload/rew_files/
 !/upload/rew.xml
+/upload
 *.bak
 *.log
 *.tmp
