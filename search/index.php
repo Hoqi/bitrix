@@ -1,9 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Поиск");
-?>
-
-<?$APPLICATION->IncludeComponent("bitrix:search.page", "clear", array(
+?><?$APPLICATION->IncludeComponent("bitrix:search.page", "clear", array(
 	"RESTART" => "N",
 	"CHECK_DATES" => "N",
 	"USE_TITLE_RANK" => "N",
@@ -34,6 +32,4 @@ $APPLICATION->SetTitle("Поиск");
 	"AJAX_OPTION_ADDITIONAL" => ""
 	),
 	false
-);?>
-
-<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
