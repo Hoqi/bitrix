@@ -63,24 +63,24 @@ IncludeTemplateLangFile(__FILE__);
         <!-- /header -->
         <!-- nav -->
         <?$APPLICATION->IncludeComponent(
-            "bitrix:menu", 
-            "top_multi", 
-            array(
-                "ALLOW_MULTI_SELECT" => "N",
-                "CHILD_MENU_TYPE" => "left",
-                "COMPONENT_TEMPLATE" => "top_multi",
-                "DELAY" => "N",
-                "MAX_LEVEL" => "3",
-                "MENU_CACHE_GET_VARS" => array(
-                ),
-                "MENU_CACHE_TIME" => "360000",
-                "MENU_CACHE_TYPE" => "N",
-                "MENU_CACHE_USE_GROUPS" => "Y",
-                "ROOT_MENU_TYPE" => "top",
-                "USE_EXT" => "N"
-            ),
-            false
-        );?>
+	"bitrix:menu", 
+	"top_multi", 
+	array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "left",
+		"COMPONENT_TEMPLATE" => "top_multi",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "3",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MENU_CACHE_TIME" => "360000",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "top",
+		"USE_EXT" => "N"
+	),
+	false
+);?>
         <!-- /nav -->
         <? if ($APPLICATION->GetCurPage() != '/'): ?>
         <!-- breadcrumbs -->
